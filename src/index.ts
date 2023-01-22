@@ -11,6 +11,7 @@ app.use("/api/countries", require("./routes/countries.routes"));
 app.use("/api/greatPeople", require("./routes/greatPeople.routes"));
 app.use("/api/tags", require("./routes/tags.routes"));
 app.use("/api/chartValues", require("./routes/values.routes"));
+app.use("/api/auth", require("./routes/users.routes"));
 
 const PORT = port || 5000;
 async function start() {
