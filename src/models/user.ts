@@ -2,9 +2,9 @@ import { Schema, model, Types } from "mongoose";
 
 const schema = new Schema(
   {
-    userId: String,
+    id: String,
     email: String,
-    userName: String,
+    username: String,
     password: String,
   },
   { collection: "User" }
