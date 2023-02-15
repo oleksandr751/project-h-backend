@@ -13,7 +13,7 @@ app.use("/api/tags", require("./routes/tags.routes"));
 app.use("/api/chartValues", require("./routes/values.routes"));
 app.use("/api/auth", require("./routes/users.routes"));
 
-const PORT = port || 5000;
+const PORT = process.env.PORT || port || 5000;
 async function start() {
   try {
     await mongoose.connect(MONGO_URI);
